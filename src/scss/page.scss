@@ -1,0 +1,337 @@
+@import "variables";
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url("../fonts/TTLakes-Regular.woff") format('woff'),
+    url("../fonts/TTLakes-Regular.ttf") format('ttf');
+    font-weight: 400;
+} 
+@font-face {
+    font-family: 'TTLakes';
+    src: url("../fonts/TTLakes-Medium.woff") format('woff'),
+    url("../fonts/TTLakes-Medium.ttf") format('ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TTLakes';
+    src: url("../fonts/TTLakes-Bold.woff") format('woff'),
+    url("../fonts/TTLakes-Bold.ttf") format('ttf');
+    font-weight: 700;
+}
+
+html  {
+    font-size: 18px;
+}
+.content-body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.page-body {
+    max-width: 1120px;
+   padding: 0;
+   margin: 0 auto;
+}
+.page-body {
+    background: $whiteTwo;  
+}
+.page-body__one {
+    font-family: 'TTLakes', sans-serif;
+    color: $blackOne;
+    overflow-x: hidden;
+    align-items: center;
+}
+.header {
+    width: 100%;
+    height: 88px;
+    background: $whiteOne;
+    border: 2px solid $whiteFive;
+}
+.menu {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 20px 16px;  
+}
+.menu-center {
+    display: none;
+}
+.menu-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 15px;  
+}
+.menu-icon-burger {
+    background-image: url('../img/burger.svg');
+    width: 40px;
+    height: 40px;
+}
+.menu-icon-logo {
+    background-image: url('../img/group.png');
+    width: 98px;
+    height: 52px;
+}
+.menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 15px;  
+}
+.menu-right-button {
+    display: none;
+}
+.menu-divider-left {
+    display: none;
+}
+.menu-divider-right {
+    background-image: url('../img/divider.png');
+    width: 2px;
+    height: 32px;
+}
+.menu-icon-repair {
+    background-image: url('../img/repair.svg');
+    width: 40px;
+    height: 40px;
+}
+.menu-icon-check {
+    background-image: url('../img/checkstatus.svg');
+    width: 40px;
+    height: 40px;
+}
+.menu-icon-burger:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+.menu-icon-repair:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+.menu-icon-check:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+
+.services-title {
+    font-size: 28px;
+    padding-left: 20px;
+    margin-top: 20px;
+    background: url('../img/highlight.svg') no-repeat;
+}
+li {
+    display: inline-block;
+}
+
+.services-list {
+    max-width: 1120px;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    padding: 10px 0px 10px 20px;
+    overflow: auto;
+ 
+}
+.services-list__item {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 17px;
+    color:$grayOne  ;  
+    font-weight: 500;
+}
+.services-list__item_active {
+    text-decoration: none;
+    white-space: nowrap;
+    color:#7E7E82;
+    font-weight: 500;
+    height: 30px;
+    background: $whiteOne;
+    border: 2px solid $lightGreen;
+    border-radius: 6px;
+    padding: 5px 20px 5px 20px;
+}
+.about {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.inform-about {
+    height: 122px;
+    font-size: 14px;
+    line-height: 18px; 
+    overflow: hidden;
+    margin-top: 20px;
+}
+.exstension {
+    display:inline-block;
+    padding-left: 40px;
+    border: none;
+
+    font-size: 16px;
+    font-family: 'TTLakes', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: $blackOne;
+    background: url('../img/sign.svg') no-repeat 15px 5px ;
+}
+.picture {
+    margin-top: 20px;
+}
+.picture-com {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    
+.menu-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.menu-divider-left {
+    display: block;
+    background-image: url('../img/divider.png');
+    width: 2px;
+    height: 32px;
+}
+.menu-center {
+    display: flex;
+    column-gap: 20px; 
+    margin-right: 5%; 
+}
+.menu-icon-call {
+    background-image: url('../img/call.svg');
+    width: 40px;
+    height: 40px;
+}
+.menu-icon-chat {
+    background-image: url('../img/chat.svg');
+    width: 40px;
+    height: 40px;
+}
+.menu-icon-profile {
+    background-image: url('../img/profile.svg');
+    width: 40px;
+    height: 40px;
+}
+.menu-icon-call:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+.menu-icon-chat:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+.menu-icon-profile:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+.rate {
+    padding-top: 5px;
+}
+.inform {
+    display: flex;
+}
+.about {
+    width: 50%;
+}
+.inform-about {
+    line-height: 20px;
+    display: block;
+    height: 158px;
+    margin-top: 25px;
+    padding-right: 20px;
+    min-width: 50%;
+}
+.picture {
+    padding-top: 10px;
+    width: 50%;
+    margin-left: 20px;
+}
+.picture-com {
+  border-radius: 10px;
+  margin-top: -10px;
+}
+}
+@media (min-width: 1440px) {
+.page-body {
+    margin: 0 auto;
+    height: 535px;
+    background: $whiteTwo;
+}
+.header {
+    height: 0;
+    border: 2px solid $whiteTwo; 
+}
+.menu-left {
+    display: none;
+}
+.menu-center {
+    display: none; 
+}
+.menu-divider-right {
+    display: none; 
+}
+.menu-right {
+    display: none;
+}
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.menu-right-button {
+    display: flex;
+    margin-right: 15px;
+}
+.menu-button-repair {
+    font-family: 'TTLakes';
+    color: $blackOne;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 50px 12px 20px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+
+    background: url('../img/checkstatus.svg') no-repeat right 0px;
+}
+.menu-button-check { 
+    font-family: 'TTLakes';
+    color: $blackOne;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 50px 12px 20px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background: url('../img/repair.svg') no-repeat right 0px;
+}
+.services-list {
+    white-space: normal;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+.services-list__item {
+    margin-top: 10px;
+}
+.inform-about {
+    margin-top: 0px;
+}
+.picture {
+    margin-top: 0px;
+}
+}
+@media (min-width: 1440px) {
+    .page-body {
+        margin-left: 320px;
+    }
+}
+ 
+ 
+
+
+ 

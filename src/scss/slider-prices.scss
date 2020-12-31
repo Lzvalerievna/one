@@ -1,0 +1,220 @@
+@import "variables";
+.slider-prices-page {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'TTLakes', sans-serif;
+    color: $grayOne;
+} 
+body {
+    margin: 0;
+    background-color: $whiteThree;
+    height: 272px;
+    margin:0;
+}
+.swiper-container-prices {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.title-prices {
+    width: 100%;
+    background-image: linear-gradient(to right, $whiteTwo 0%, $whiteOne 100%);
+    border: none;
+}
+.title-header {
+    text-transform: uppercase;
+    padding: 16px;
+    letter-spacing: -0.2px;
+}
+.slider-conteiner {
+    position: relative;
+    background-color: $whiteOne;
+    height: 200px;
+    width: 260px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.swiper-wrapper-prices { 
+    flex-wrap: nowrap;
+    height: 272px;
+    margin-left: 16px;
+    padding-left: 0;
+}
+.swiper-slide-li {
+    height: 200px;
+    margin:0;
+    display: block;
+    padding-right: 16px;
+    padding-top: 16px;
+    width: auto;
+}
+.slider-conteiner-services {
+    padding-top: 16px;
+}
+.slider-conteiner-prices {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.slider-conteiner-services {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.slider-conteiner-time {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.slider-conteiner-text {
+    margin-top: 4px;
+    color: $grayOne;
+}
+.slider-conteiner-about {
+    color: $blackOne;
+    line-height: 18px;
+}
+.swiper-pagination {
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+}
+.button-price {
+    position:absolute;
+    bottom: 16px;
+    right: 16px;
+    height: 32px;
+    width: 119px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-right: 10%;
+    text-transform: uppercase;
+    color: $whiteOne;
+    background-color: $pinkOne;
+    border-radius: 16px;
+    border:  1px solid $pinkOne; 
+    background-image: url("../img/dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: 100px;
+    margin-top: 19px;
+    padding-left: 24px;
+}
+.button-price:hover {
+    filter: contrast(2) brightness(2);
+    transform: scale(1.1);
+}
+.slider-prices-footer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+}
+.about-prices {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-right: 10%;
+}
+.about-offer {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $blackOne;
+    margin-bottom: 40px;
+}
+.about-offer::after {
+    content: url("../img/Line.svg");
+    padding-left: 10px;
+}
+@media (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+    
+    .title-header {
+        padding-left: 0;
+        margin-left: 3%;
+    }
+    .slider-conteiner {
+        display: flex;
+    }
+    .swiper-wrapper-prices {
+        flex-direction: column;
+    }
+    .swiper-wrapper-prices {
+        height: 324px;
+        width: 95.5%;
+        background-color: $whiteOne;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 63px;
+        border-radius: 6px;
+    }
+    .swiper-slide-li {
+        height: 64px;
+        padding-top:0;
+        border-bottom: 1px solid $whiteFore;
+        padding-left: 0;
+        margin-right:  3%;
+        margin-left:  3%;
+    }
+    .slider-conteiner {
+        display: flex;
+        height: 64px;
+    }
+    .slider-conteiner {
+        width: 100%;
+    }
+    .slider-conteiner-prices {
+        margin-left: 0;
+        margin-right: 5%;
+        margin-bottom: 16px;
+    }
+    .slider-conteiner-text {
+        white-space: nowrap;
+    }
+    .slider-conteiner-about {
+       display: flex;
+       white-space: nowrap;
+    }
+    .slider-conteiner-text {
+        display: none;
+    }
+    .slider-conteiner-services {
+        width: 54%;
+        margin-top: 22px; 
+        margin-left: 0;
+        padding: 0;
+    }
+    .slider-conteiner-prices {
+        width: 8%;
+        margin-top: 22px;
+    }
+    .slider-conteiner-time {
+       margin-right: 7%;
+       margin-top: 22px;
+    
+    }
+    .slider-conteiner-text-one {
+        display: flex;
+        margin-top: -60px;
+        margin-bottom: 43px;
+    }
+    .button-price {
+        right: -5px;
+    }
+    .about-prices {
+        width: 421px;
+        height: 60px;
+        margin-left: 1%;
+    }
+    .about-offer {
+        margin-left: 1%;
+    }
+
+}

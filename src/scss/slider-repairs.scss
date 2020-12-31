@@ -1,0 +1,141 @@
+@import "variables";
+html {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'TTLakes', sans-serif;
+    color: $grayOne;
+} 
+
+body {
+    margin: 0;
+    background-color: $whiteTwo;
+}
+.show-more-checker {
+    opacity: 0;
+    position:absolute;
+}
+
+.title-repairs {
+    width: 100%;
+    background-image: linear-gradient(to right, $whiteTwo 0%, $whiteOne 100%);
+    border: none;
+    margin-top: 20px;
+}
+.title-header {
+    text-transform: uppercase;
+    padding: 16px;
+    letter-spacing: -0.2px;
+}
+
+.swiper-wrapper-repairs { 
+    flex-wrap: wrap;
+    padding:0;
+}
+.swiper-slide-repairs {
+    margin:0;
+    display: flex;
+    padding-left: 16px;
+    padding-top: 16px;
+    width: auto;
+}
+.swiper-slide-repair {
+    width: 240px;
+    height: 160px;
+    border: 1px solid $whiteFore;
+    border-radius: 6px;
+    background:  $whiteOne url('../img/go.png') no-repeat 92% 85%;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-left: 16px; 
+    color: $blackOne;
+}
+
+ .swiper-pagination {
+    bottom: 0;
+}
+ .swiper-pagination-bullet {
+    background-color: $lightGrey;
+    width: 12px;
+    height: 12px;
+}
+@media (max-width: 768px) {
+    .show-more-button {
+        display: none;
+    }
+    .swiper-wrapper-repairs { 
+        flex-wrap: nowrap;
+        height: 230px;
+    }
+}
+@media (min-width: 768px) {
+    .swiper-wrapper-repairs { 
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 220px;
+    }
+    .swiper-container-repairs {
+        max-width: 1120px;
+        margin: 0 auto;
+        overflow: hidden;
+        position:relative;
+    }
+
+    .show-more-button-repairs {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker-repairs ~ .show-more-button-repairs:after {
+        white-space: nowrap;
+        content: "Показать все";
+        color: $blackOne;
+        font-weight: 500;
+        padding-left: 24px;
+        background: URL('../img/show.png') no-repeat 0px;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker-repairs:checked ~ .show-more-button-repairs:after {
+        content: "Скрыть";
+        font-weight: 500;
+        background: URL('../img/hiden.png') no-repeat 0px;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker-repairs:checked ~ .swiper-wrapper-repairs {
+        max-height: none;
+    }
+    .swiper-slide-repair {
+        width: 97%;
+    }
+    .swiper-slide-repairs {
+        width: 30%;
+        margin: 1.66%;
+        padding-left: 0;
+     }
+    .title-repairs {
+        height: 56px;
+    }
+    .title-header {
+        padding-left: 24px;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+}
+@media (min-width: 1120px) {
+    .swiper-slide-repairs {
+        width: 240px;
+    }
+    .swiper-slide-repairs {
+        width: 21.6%;
+     }
+}
+
+
+
+
