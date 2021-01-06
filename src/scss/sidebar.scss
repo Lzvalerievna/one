@@ -4,7 +4,7 @@ a {
     color: $blackOne;
 }
 .sidebar-icon {
-    width: 44px;
+    width: 50px;
     height: 40px;
     border: none;
     transition-duration: 0.3s;
@@ -12,16 +12,15 @@ a {
 .page-sidebar {
     position: fixed;
     top: 0;
-    max-width: 320px;
+    width: 360px;
     height: 100vh;
     margin: 0;
     padding:0;
     background-color: $whiteOne;
-    font-weight: 400;
     font-family: 'TTLakes', sans-serif;
     font-weight: 500;
     color: $blackOne;
-    transition: 0;
+    transition: 0.5s;
     transform: translateX(-100%);
     z-index: 200;
 }
@@ -36,18 +35,18 @@ a {
 }
 .header-sidebar {
     display: flex;
-    margin-left: 24px;
+    margin-left: 5%;
 }
-  
+
 .page-sidebar__overlay {
     display: none;
     position: fixed;
     top: 0;
-    left: 320px;
+    left: 360px;
     width: 100vw;
     height: 100vh;
 }
-.page-sidebar_active .page-sidebar__overlay { 
+.page-sidebar_active .page-sidebar__overlay {
     display: block;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: inset 0 0 30px 0 $lightGrey;
@@ -56,11 +55,11 @@ a {
 .header-icon-close {
     background: url("../img/close.svg") no-repeat;
     margin-top: 40px;
-    margin-right: 17px;
 }
 .header-logo {
     background: url("../img/group.png") no-repeat;
-    width: 110px;
+    margin-left: 3%;
+    width: 150px;
     height: 52px;
     margin-top: 36px;
     transition-duration: 0.3s;
@@ -71,8 +70,7 @@ a {
 .header-icon-search {
     background: url("../img/search.svg") no-repeat;
     margin-top: 40px;
-    margin-left: 75px;
-    margin-right: 24px;
+    margin-left: 20%;
 }
 .sidebar-icon:hover {
     filter: contrast(2) brightness(2);
@@ -124,7 +122,7 @@ a {
 .contacts-mail {
     display: block;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 16px;
 }
 .contacts-phone {
@@ -158,6 +156,14 @@ a {
     background: none;
     border: none;
 }
+@media (max-width: 360px) {
+  .page-sidebar {
+    width: 100vw;
+  }
+  .header-icon-search {
+    margin-right: 5%;
+  }
+}
 .footer-languages__CH {
     background: none;
     border: none;
@@ -166,6 +172,7 @@ a {
     .page-sidebar {
         transform: translateX(0px);
         z-index: 200;
+        transition: 0s;
     }
 .page-sidebar_active {
     transform:translateX(0%);

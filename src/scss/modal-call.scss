@@ -74,7 +74,7 @@
     color: $whiteOne;
     background-color: $pinkOne;
     border-radius: 16px;
-    border:  1px solid $pinkOne; 
+    border:  1px solid $pinkOne;
     background-image: url("../img/dropdown.svg");
     background-repeat: no-repeat;
     background-position: 85%;
@@ -95,10 +95,10 @@
     width: 288px;
 }
 span {
-   color: $pinkOne; 
+   color: $pinkOne;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
     .modal-call__overlay {
         right: 440px;
     }

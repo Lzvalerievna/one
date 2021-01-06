@@ -8,7 +8,7 @@ html {
     font-weight: 400;
     font-family: 'TTLakes', sans-serif;
     color: $grayOne;
-} 
+}
 body {
     margin: 0;
     background-color: $whiteThree;
@@ -22,8 +22,8 @@ body {
 }
 .title-prices {
     width: 100%;
+    border-top: 1px solid $whiteFive;
     background-image: linear-gradient(to right, $whiteTwo 0%, $whiteOne 100%);
-    border: none;
 }
 .title-header {
     text-transform: uppercase;
@@ -39,7 +39,7 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
-.swiper-wrapper-prices { 
+.swiper-wrapper-prices {
     flex-wrap: nowrap;
     height: 272px;
     margin-left: 16px;
@@ -97,7 +97,7 @@ body {
     color: $whiteOne;
     background-color: $pinkOne;
     border-radius: 16px;
-    border:  1px solid $pinkOne; 
+    border:  1px solid $pinkOne;
     background-image: url("../img/dropdown.svg");
     background-repeat: no-repeat;
     background-position: 100px;
@@ -126,6 +126,8 @@ body {
     text-decoration: none;
     color: $blackOne;
     margin-bottom: 40px;
+    margin-right: 20px;
+    letter-spacing: -0.2px;
 }
 .about-offer::after {
     content: url("../img/Line.svg");
@@ -135,7 +137,7 @@ body {
     .swiper-pagination {
         display: none;
     }
-    
+
     .title-header {
         padding-left: 0;
         margin-left: 3%;
@@ -187,7 +189,7 @@ body {
     }
     .slider-conteiner-services {
         width: 54%;
-        margin-top: 22px; 
+        margin-top: 22px;
         margin-left: 0;
         padding: 0;
     }
@@ -198,7 +200,7 @@ body {
     .slider-conteiner-time {
        margin-right: 7%;
        margin-top: 22px;
-    
+
     }
     .slider-conteiner-text-one {
         display: flex;

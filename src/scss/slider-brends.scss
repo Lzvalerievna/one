@@ -3,11 +3,11 @@ html {
     font-size: 16px;
     font-weight: 400;
     font-family: 'TTLakes', sans-serif;
-    color: #7E7E82;
-} 
+    color: $grayOne;
+}
 body {
     margin: 0;
-    background-color: #F8F8F8;
+    background-color: $whiteTwo;
 }
 .slider-brands {
     margin-top: 20px;
@@ -18,8 +18,8 @@ body {
 }
 .title-brands {
     width: 100%;
+    border-top: 1px solid $whiteFive;
     background-image: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
-    border: none;
 }
 
 .title-header {
@@ -28,7 +28,7 @@ body {
     letter-spacing: -0.2px;
 }
 
-.swiper-wrapper-brands { 
+.swiper-wrapper-brands {
     flex-wrap: wrap;
     padding:0
 }
@@ -51,11 +51,11 @@ body {
 }
 .swiper-slide-brand__aces {
     background:  url('../img/go.png') no-repeat 92%,
-  #FFFFFF url('../img/acer.png') no-repeat 16px; 
+  #FFFFFF url('../img/acer.png') no-repeat 16px;
 }
 .swiper-slide-brand__apple {
     background:  url('../img/go.png') no-repeat 92%,
-    #FFFFFF url('../img/apple.png') no-repeat 16px; 
+    #FFFFFF url('../img/apple.png') no-repeat 16px;
 }
 .swiper-slide-brand__hp {
     background:  url('../img/go.png') no-repeat 92%,
@@ -89,13 +89,13 @@ body {
     .show-more-button {
         display: none;
     }
-    .swiper-wrapper-brands { 
+    .swiper-wrapper-brands {
         flex-wrap: nowrap;
         height: 125px;
     }
 }
 @media (min-width: 768px) {
-    .swiper-wrapper-brands { 
+    .swiper-wrapper-brands {
         flex-wrap: wrap;
         overflow: hidden;
         max-height: 180px;

@@ -101,7 +101,7 @@
 span {
     color: $pinkOne;
  }
- @media (min-width: 1440px) {
+ @media (min-width: 768px) {
     .modal-connection__overlay {
         right: 440px;
     }
@@ -135,4 +135,4 @@ span {
     }
 
 }
- 
+

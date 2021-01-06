@@ -4,7 +4,7 @@ html {
     font-weight: 400;
     font-family: 'TTLakes', sans-serif;
     color: $grayOne;
-} 
+}
 
 body {
     margin: 0;
@@ -18,7 +18,7 @@ body {
 .title-repairs {
     width: 100%;
     background-image: linear-gradient(to right, $whiteTwo 0%, $whiteOne 100%);
-    border: none;
+    border-top: 1px solid $whiteFive;
     margin-top: 20px;
 }
 .title-header {
@@ -27,7 +27,7 @@ body {
     letter-spacing: -0.2px;
 }
 
-.swiper-wrapper-repairs { 
+.swiper-wrapper-repairs {
     flex-wrap: wrap;
     padding:0;
 }
@@ -48,7 +48,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     padding-top: 16px;
-    padding-left: 16px; 
+    padding-left: 16px;
     color: $blackOne;
 }
 
@@ -64,13 +64,13 @@ body {
     .show-more-button {
         display: none;
     }
-    .swiper-wrapper-repairs { 
+    .swiper-wrapper-repairs {
         flex-wrap: nowrap;
         height: 230px;
     }
 }
 @media (min-width: 768px) {
-    .swiper-wrapper-repairs { 
+    .swiper-wrapper-repairs {
         flex-wrap: wrap;
         overflow: hidden;
         max-height: 220px;
