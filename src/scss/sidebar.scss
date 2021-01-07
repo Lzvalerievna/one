@@ -70,10 +70,7 @@ a {
     margin-top: 40px;
 }
 .header-logo {
-    background: url("../img/group.png") no-repeat;
     margin-left: 3%;
-    width: 150px;
-    height: 52px;
     margin-top: 36px;
     transition-duration: 0.3s;
 }
@@ -83,7 +80,7 @@ a {
 .header-icon-search {
     background: url("../img/search.svg") no-repeat;
     margin-top: 40px;
-    margin-left: 20%;
+  margin-left: 35%;
 }
 .sidebar-icon:hover {
     filter: contrast(2) brightness(2);
@@ -174,7 +171,7 @@ a {
     width: 100vw;
   }
   .header-icon-search {
-    margin-right: 5%;
+    margin-left: 30%;
   }
 }
 .footer-languages__CH {

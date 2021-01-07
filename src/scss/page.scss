@@ -22,7 +22,7 @@ html  {
     font-size: 18px;
     background-color: $whiteTwo;
 }
-.page-body_active {
+.content-body_active {
    overflow: hidden;
 }
 .page-body {
@@ -65,12 +65,6 @@ html  {
     width: 40px;
     height: 40px;
 }
-.menu-icon-logo {
-    display: inline;
-    background-image: url('../img/group.png');
-    width: 98px;
-    height: 52px;
-}
 .menu-right {
     display: flex;
     align-items: center;
@@ -84,6 +78,12 @@ html  {
     background-image: url('../img/repair.svg');
     width: 40px;
     height: 40px;
+}
+.menu-icon-logo {
+  transition: 0.3s;
+}
+.menu-icon-logo:hover {
+  transform: scale(1.1);
 }
 .menu-icon-repair::before {
   content: url('../img/divider.png');
