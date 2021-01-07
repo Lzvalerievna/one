@@ -31,7 +31,7 @@ html {
   font-size: 18px;
   background-color: #F8F8F8; }
 
-.page-body_active {
+.content-body_active {
   overflow: hidden; }
 
 .page-body {
@@ -75,12 +75,6 @@ html {
   width: 40px;
   height: 40px; }
 
-.menu-icon-logo {
-  display: inline;
-  background-image: url(./static/group.png);
-  width: 98px;
-  height: 52px; }
-
 .menu-right {
   display: flex;
   align-items: center;
@@ -95,6 +89,12 @@ html {
   background-image: url(./static/repair.svg);
   width: 40px;
   height: 40px; }
+
+.menu-icon-logo {
+  transition: 0.3s; }
+
+.menu-icon-logo:hover {
+  transform: scale(1.1); }
 
 .menu-icon-repair::before {
   content: url(./static/divider.png);
@@ -904,10 +904,7 @@ a {
   margin-top: 40px; }
 
 .header-logo {
-  background: url(./static/group.png) no-repeat;
   margin-left: 3%;
-  width: 150px;
-  height: 52px;
   margin-top: 36px;
   transition-duration: 0.3s; }
 
@@ -917,7 +914,7 @@ a {
 .header-icon-search {
   background: url(./static/search.svg) no-repeat;
   margin-top: 40px;
-  margin-left: 20%; }
+  margin-left: 35%; }
 
 .sidebar-icon:hover {
   -webkit-filter: contrast(2) brightness(2);
@@ -1009,7 +1006,7 @@ a {
   .page-sidebar {
     width: 100vw; }
   .header-icon-search {
-    margin-right: 5%; } }
+    margin-left: 30%; } }
 
 .footer-languages__CH {
   background: none;
