@@ -52,13 +52,13 @@
     <div class="modal-connection">
         <div class="modal-connection-form">
             <button class="button-close-icon"></button>
-            <h1 class="form-title">Обратная связь</h1>
+            <h2 class="form-title">Обратная связь</h2>
             <form class="form-list" action="#" method="post">
                 <input class="form-list-type form-list-name" type="text" name="name" placeholder="Имя">
                 <input class="form-list-type form-list-tel" type="tel" name="tel" placeholder="Телефон">
                 <input class="form-list-type form-list-email" type="email" name="email" placeholder="Электронная почта">
                 <textarea class="form-list-type form-list-message" name="comment" placeholder="Сообщение"></textarea>
-            <p class="form-text">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+            <p class="form-text">Нажимая “отправить”, вы даете согласие на <q>обработку персональных данных</q> и соглашаетесь с нашей <q>политикой конфиденциальности</q></p>
             <button class="button" type="submit">отправить</button>
         </form>
         </div>
@@ -68,10 +68,10 @@
     <div class="modal-call">
         <div class="modal-call-form">
             <button class="button-modal-close-icon"></button>
-            <h1 class="form-title-call">Заказать звонок</h1>
+            <h2 class="form-title-call">Заказать звонок</h2>
             <form class="form-list" action="#" method="post">
                 <input class="form-list-type form-list-tel" type="tel" name="tel" placeholder="Телефон">
-            <p class="form-text">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+            <p class="form-text">Нажимая “отправить”, вы даете согласие на <q>обработку персональных данных</q> и соглашаетесь с нашей <q>политикой конфиденциальности</q></p>
             <button class="button" type="submit">отправить </button>
         </form>
         </div>
@@ -79,12 +79,11 @@
     </div>
 
     <div class="page-body">
-    <div class="page-body__one">
-        <header class="header">
+    <header class="header">
+        <div class="header-page">
                 <div class="menu">
                     <div class="menu-left">
                         <a href="#" class="menu-icon-burger"></a>
-                        <div class="menu-divider-left"></div>
                         <div class="menu-icon-logo"></div>
                     </div>
                     <div class="menu-center-right">
@@ -94,19 +93,18 @@
                         <a href="#" class="menu-icon-profile"></a>
                       </div>
                       <div class="menu-right">
-                        <div class="menu-divider-right"></div>
                         <a href="#" class="menu-icon-repair"></a>
                         <a href="#" class="menu-icon-check"></a>
                     </div>
                 </div>
                 </div>
-        </header>
-        <main class="rate">
+        </div>
+        <section class="rate">
                 <div class="services">
                    <h1 class="services-title">Услуги и сервисы</h1>
                    <div class="menu-right-button">
-                       <button class="menu-button-repair">Оставить заявку</button>
-                       <button class="menu-button-check">Статус ремонта</button>
+                     <button class="menu-button-repair">Оставить заявку</button>
+                     <button class="menu-button-check">Статус ремонта</button>
                 </div>
                 </div>
                 <nav class="navigation">
@@ -126,8 +124,10 @@
                     </div>
                     <div class="picture"><img src="img/MG_3223.jpg" class="picture-com" alt="Вывеска"></div>
                 </div>
-        </main>
-    </div>
+        </section>
+    </header>
+
+    <main class="content-page">
     <div class="slider-brands">
     <div class="swiper-container swiper-container-brands" data-mobile="false">
         <div class="title title-brands"><div class="title-header">ремонт технически различных брендов</div></div>
@@ -148,7 +148,6 @@
         <div class="swiper-pagination"></div>
         <label for="show-more-checker-brands" class="show-more-button show-more-button-brands"></label>
     </div>
-         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </div>
 
     <div class="slider-repairs">
@@ -171,25 +170,37 @@
         <div class="swiper-pagination"></div>
         <label for="show-more-checker-repairs" class="show-more-button-repairs"></label>
     </div>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    </div>
 
    <div class="slider-prices-page">
     <div class="swiper-container swiper-container-prices" data-mobile="false">
         <div class="title title-prices"><div class="title-header">цены на услуги</div></div>
+      <div class="swiper-slide-li-one">
+        <div class="conteiner-li-one">
+          <div class="slider-conteiner-services">
+            <div class="slider-conteiner-text-left">Ремонтируемые услуги</div>
+          </div>
+          <div class="slider-conteiner-prices">
+            <div class="slider-conteiner-text-center">Цена</div>
+          </div>
+          <div class="slider-conteiner-time">
+            <div class="slider-conteiner-text-right">Срок</div>
+          </div>
+        </div>
+      </div>
         <ul class="swiper-wrapper swiper-wrapper-prices">
             <li class="swiper-slide swiper-slide-li">
                 <div class="slider-conteiner">
                     <div class="slider-conteiner-services">
-                        <div class="slider-conteiner-text slider-conteiner-text-one">Ремонтируемые услуги</div>
+                        <div class="slider-conteiner-text">Ремонтируемые услуги</div>
                         <div class="slider-conteiner-about slider-conteiner-about-service">Диагностика</div>
                     </div>
                     <div class="slider-conteiner-prices">
-                        <div class="slider-conteiner-text slider-conteiner-text-one">Цена</div>
+                        <div class="slider-conteiner-text">Цена</div>
                         <div class="slider-conteiner-about slider-conteiner-about-price">Бесплатно</div>
                     </div>
                     <div class="slider-conteiner-time">
-                        <div class="slider-conteiner-text slider-conteiner-text-one">Срок</div>
+                        <div class="slider-conteiner-text">Срок</div>
                         <div class="slider-conteiner-about slider-conteiner-about-time">30 мин</div>
                         <button class="button-price">заказать</button>
                     </div>
@@ -267,22 +278,21 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <div class="slider-prices-footer">
         <p class="about-prices">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
         <a class="about-offer" href="#">Получить коммерческое предложение</a>
     </div>
     </div>
 
-    <div class="page-footer">
+    <footer class="page-footer">
         <div class="page-footer-left">
             <div class="page-footer-text">© 2019 CPS</div>
             <div class="page-footer-text">Разработано командой Apesong</div>
         </div>
         <div class="page-footer-center">Политика конфиденциальности</div>
         <div class="page-footer-right">Информация, размещенная на данной странице, не является публичной офертой</div>
-    </div>
+    </footer>
+    </main>
     </div>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
