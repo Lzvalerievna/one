@@ -18,14 +18,12 @@
     url("../fonts/TTLakes-Bold.ttf") format('ttf');
     font-weight: 700;
 }
-
 html  {
     font-size: 18px;
     background-color: $whiteTwo;
 }
-.content-body {
-    max-width: 1440px;
-    margin: 0 auto;
+.page-body_active {
+   overflow: hidden;
 }
 .page-body {
     max-width: 1439px;
@@ -35,13 +33,13 @@ html  {
 .page-body {
     background: $whiteTwo;
 }
-.page-body__one {
+.header {
     font-family: 'TTLakes', sans-serif;
     color: $blackOne;
     overflow-x: hidden;
     align-items: center;
 }
-.header {
+.header-page {
     width: 100%;
     height: 88px;
     background: $whiteOne;
@@ -82,18 +80,16 @@ html  {
 .menu-right-button {
     display: none;
 }
-.menu-divider-left {
-    display: none;
-}
-.menu-divider-right {
-    background-image: url('../img/divider.png');
-    width: 2px;
-    height: 32px;
-}
 .menu-icon-repair {
     background-image: url('../img/repair.svg');
     width: 40px;
     height: 40px;
+}
+.menu-icon-repair::before {
+  content: url('../img/divider.png');
+  position: absolute;
+  top: 32px;
+  margin-left: -23px;
 }
 .menu-icon-check {
     background-image: url('../img/checkstatus.svg');
@@ -124,7 +120,6 @@ li {
 }
 
 .services-list {
-    max-width: 1120px;
     font-size: 16px;
     line-height: 20px;
     white-space: nowrap;
@@ -138,6 +133,9 @@ li {
     padding: 10px 17px;
     color:$grayOne  ;
     font-weight: 500;
+}
+.services-list__item:hover {
+  color: $pinkTwo;
 }
 .services-list__item_active {
     text-decoration: none;
@@ -167,13 +165,15 @@ li {
     display:inline-block;
     padding-left: 40px;
     border: none;
-
     font-size: 16px;
     font-family: 'TTLakes', sans-serif;
     font-weight: 500;
     text-decoration: none;
     color: $blackOne;
     background: url('../img/sign.svg') no-repeat 15px 5px ;
+}
+.exstension:hover {
+    color: $pinkTwo;
 }
 .picture {
     margin-top: 20px;
@@ -184,18 +184,21 @@ li {
 }
 
 @media (min-width: 768px) {
+  .menu-icon-burger::after {
+    content: url('../img/divider.png');
+    position: absolute;
+    top: 32px;
+    left: 80px;
+  }
+  .menu-icon-logo {
+    margin-left: 30px;
+  }
 
 .menu-center-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 20px;
-}
-.menu-divider-left {
-    display: block;
-    background-image: url('../img/divider.png');
-    width: 2px;
-    height: 32px;
 }
 .menu-center {
     display: flex;
@@ -216,6 +219,7 @@ li {
     background-image: url('../img/profile.svg');
     width: 40px;
     height: 40px;
+    margin-right: 27px;
 }
 .menu-icon-call:hover {
     filter: contrast(2) brightness(2);
@@ -262,7 +266,7 @@ li {
     height: 535px;
     background: $whiteTwo;
 }
-.header {
+.header-page {
     height: 0;
     border: 2px solid $whiteTwo;
 }
@@ -292,7 +296,6 @@ li {
     font-family: 'TTLakes';
     color: $blackOne;
     font-size: 16px;
-    font-weight: 500;
     padding: 10px 50px 12px 20px;
     white-space: nowrap;
     font-size: 16px;

@@ -51,7 +51,10 @@ body {
     padding-left: 16px;
     color: $blackOne;
 }
-
+.swiper-slide-repair:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
  .swiper-pagination {
     bottom: 0;
 }
@@ -76,7 +79,7 @@ body {
         max-height: 220px;
     }
     .swiper-container-repairs {
-        max-width: 1120px;
+        max-width: 1439px;
         margin: 0 auto;
         overflow: hidden;
         position:relative;

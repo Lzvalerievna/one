@@ -19,7 +19,7 @@ body {
 .title-brands {
     width: 100%;
     border-top: 1px solid $whiteFive;
-    background-image: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
+    background-image: linear-gradient(to right, $whiteTwo 0%, $whiteOne 100%);
 }
 
 .title-header {
@@ -42,40 +42,45 @@ body {
 .swiper-slide-brand {
     width: 240px;
     height: 72px;
-    border: 1px solid #EAEAEA;
+    padding-left: 16px;
+    border: 1px solid $whiteFore;
     border-radius: 6px;
+}
+.swiper-slide-brand:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 .swiper-slide-brand__lenovo {
     background:url('../img/go.png') no-repeat 92%,
-    #FFFFFF  url('../img/Lenovo.png') no-repeat 16px;
+    $whiteOne  url('../img/Lenovo.png') no-repeat 16px;
 }
 .swiper-slide-brand__aces {
     background:  url('../img/go.png') no-repeat 92%,
-  #FFFFFF url('../img/acer.png') no-repeat 16px;
+    $whiteOne url('../img/acer.png') no-repeat 16px;
 }
 .swiper-slide-brand__apple {
     background:  url('../img/go.png') no-repeat 92%,
-    #FFFFFF url('../img/apple.png') no-repeat 16px;
+    $whiteOne url('../img/apple.png') no-repeat 16px;
 }
 .swiper-slide-brand__hp {
     background:  url('../img/go.png') no-repeat 92%,
-    #FFFFFF url('../img/hp.png') no-repeat 16px;
+    $whiteOne url('../img/hp.png') no-repeat 16px;
 }
 .swiper-slide-brand__sony {
     background: url('../img/go.png') no-repeat 92%,
-     #FFFFFF url('../img/sony.png') no-repeat 16px;
+    $whiteOne url('../img/sony.png') no-repeat 16px;
 }
 .swiper-slide-brand__vs {
     background: url('../img/go.png') no-repeat 92%,
-     #FFFFFF url('../img/VS.png') no-repeat 16px;
+    $whiteOne url('../img/VS.png') no-repeat 16px;
 }
 .swiper-slide-brand__bosch {
     background:  url('../img/go.png') no-repeat 92%,
-    #FFFFFF url('../img/bosch.png') no-repeat 16px;
+    $whiteOne url('../img/bosch.png') no-repeat 16px;
 }
 .swiper-slide-brand__samsung {
     background:  url('../img/go.png') no-repeat 92%,
-    #FFFFFF url('../img/Samsung.png') no-repeat 16px;
+    $whiteOne url('../img/Samsung.png') no-repeat 16px;
 }
  .swiper-pagination {
     bottom: 0;
@@ -101,12 +106,11 @@ body {
         max-height: 180px;
     }
     .swiper-container-brands {
-        max-width: 1120px;
+        max-width: 1439px;
         margin: 0 auto;
         overflow: hidden;
         position:relative;
     }
-
     .show-more-button-brands {
         position: relative;
         cursor: pointer;
@@ -114,10 +118,10 @@ body {
         margin-left: 1.8%;
         margin-top: 24px;
     }
-    .show-more-checker-brands ~ .show-more-button-brands:after {
+  .show-more-checker-brands ~ .show-more-button-brands:after {
         white-space: nowrap;
         content: "Показать все";
-        color: #1B1C21;
+        color: $blackOne;
         font-weight: 500;
         padding-left: 24px;
         background: URL('../img/show.png') no-repeat 0px;
@@ -153,9 +157,6 @@ body {
     }
 }
 @media (min-width: 1120px) {
-    .swiper-slide-brand {
-        width: 240px;
-    }
     .swiper-slide-brands {
         width: 21.6%;
      }

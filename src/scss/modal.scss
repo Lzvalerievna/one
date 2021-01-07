@@ -9,12 +9,17 @@
     font-family: 'TTLakes', sans-serif;
     color: $blackOne;
     border: 1px solid $whiteFive;
-    transition: 0.5s;
-    transform: translateX(100%);
+    animation-name: modal-in;
+    animation-duration: 0.8s;
     z-index: 200;
+    display: none;
+}
+@keyframes modal-in {
+    from {transform: translateX(360px)}
+    to {transform:translateX(0px)}
 }
 .modal-connection_active {
-    transform:translateX(0%);
+    display: block;
 }
 .modal-connection__overlay {
     display: none;
@@ -86,8 +91,7 @@
     margin-left: 168px;
 }
 .button:hover {
-    filter: contrast(2) brightness(2);
-    transform: scale(1.1);
+  background-color: $pinkTwo;
 }
 .form-text {
     font-size: 14px;
@@ -98,7 +102,7 @@
     margin-left: 5%;
     width: 288px;
 }
-span {
+q {
     color: $pinkOne;
  }
  @media (min-width: 768px) {

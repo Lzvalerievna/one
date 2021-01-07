@@ -20,14 +20,19 @@ a {
     font-family: 'TTLakes', sans-serif;
     font-weight: 500;
     color: $blackOne;
-    transition: 0.5s;
-    transform: translateX(-100%);
     z-index: 200;
+    display: none;
+    animation-name: sidebar-in;
+    animation-duration: 0.6s;
+}
+@keyframes sidebar-in {
+  from {transform: translateX(-360px)}
+  to {transform:translateX(0px)}
+}
+.page-sidebar_active {
+    display: block;
 }
 
-.page-sidebar_active {
-    transform:translateX(0%);
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -45,6 +50,14 @@ a {
     left: 360px;
     width: 100vw;
     height: 100vh;
+}
+.page-sidebar_active {
+  .page-body-no-scroll {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
 }
 .page-sidebar_active .page-sidebar__overlay {
     display: block;
@@ -141,7 +154,7 @@ a {
 .footer-languages button:hover,
 .contacts-phone:hover,
 .contacts-mail:hover {
-    color: $colorRed;
+    color: $pinkTwo;
 }
 .footer-languages__EN {
     margin-left: 7px;
@@ -170,13 +183,13 @@ a {
 }
 @media (min-width: 1440px) {
     .page-sidebar {
-        transform: translateX(0px);
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
         z-index: 200;
-        transition: 0s;
+        animation-duration: 0s;
     }
-.page-sidebar_active {
-    transform:translateX(0%);
-}
     .header-icon-close {
         display: none;
     }
