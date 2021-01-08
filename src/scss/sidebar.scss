@@ -80,7 +80,6 @@ a {
 .header-icon-search {
     background: url("../img/search.svg") no-repeat;
     margin-top: 40px;
-    margin-left: 35%;
 }
 .sidebar-icon:hover {
     filter: contrast(2) brightness(2);
@@ -171,7 +170,7 @@ a {
 }
 @media (max-width: 360px) {
   .header-icon-search {
-    margin-left: 30%;
+    margin-left: 25%;
   }
 }
 .footer-languages__CH {
