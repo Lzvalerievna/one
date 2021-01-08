@@ -1047,7 +1047,7 @@ a {
           animation-name: modal-in;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
-  z-index: 200;
+  z-index: 300;
   display: none; }
 
 @-webkit-keyframes modal-in {
@@ -1189,7 +1189,7 @@ q {
           animation-name: modal-call-in;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
-  z-index: 200;
+  z-index: 300;
   display: none; }
 
 @-webkit-keyframes modal-call-in {
