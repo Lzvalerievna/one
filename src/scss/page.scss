@@ -22,15 +22,16 @@ html  {
     font-size: 18px;
     background-color: $whiteTwo;
 }
-.content-body_active {
-   overflow: hidden;
+body.body_active {
+  overflow: hidden;
 }
-.page-body {
+.content-body {
+  background: none;
+}
+.page-body-content {
     max-width: 1439px;
-    padding: 0;
-    margin: 0 auto;
 }
-.page-body {
+.page-body-content {
     background: $whiteTwo;
 }
 .header {
@@ -70,12 +71,14 @@ html  {
     align-items: center;
     justify-content: space-around;
     column-gap: 15px;
+    background: url('../img/divider.png') no-repeat 0px 5px;
+    padding-left: 20px;
 }
 .menu-right-button {
     display: none;
 }
 .menu-icon-repair {
-    background-image: url('../img/repair.svg');
+    background: url('../img/repair.svg');
     width: 40px;
     height: 40px;
 }
@@ -85,12 +88,7 @@ html  {
 .menu-icon-logo:hover {
   transform: scale(1.1);
 }
-.menu-icon-repair::before {
-  content: url('../img/divider.png');
-  position: absolute;
-  top: 32px;
-  margin-left: -23px;
-}
+
 .menu-icon-check {
     background-image: url('../img/checkstatus.svg');
     width: 40px;
@@ -108,7 +106,6 @@ html  {
     filter: contrast(2) brightness(2);
     transform: scale(1.1);
 }
-
 .services-title {
     font-size: 28px;
     padding-left: 20px;
@@ -118,7 +115,6 @@ html  {
 li {
     display: inline-block;
 }
-
 .services-list {
     font-size: 16px;
     line-height: 20px;
@@ -184,16 +180,11 @@ li {
 }
 
 @media (min-width: 768px) {
-  .menu-icon-burger::after {
-    content: url('../img/divider.png');
-    position: absolute;
-    top: 32px;
-    left: 80px;
-  }
   .menu-icon-logo {
-    margin-left: 30px;
+    margin-left: 5px;
+    background: url('../img/divider.png') no-repeat 0px 11px;
+    padding-left: 20px;
   }
-
 .menu-center-right {
     display: flex;
     align-items: center;
@@ -203,7 +194,7 @@ li {
 .menu-center {
     display: flex;
     column-gap: 20px;
-    margin-right: 5%;
+    margin-right: -10px;
 }
 .menu-icon-call {
     background-image: url('../img/call.svg');
@@ -261,11 +252,19 @@ li {
 }
 }
 @media (min-width: 1440px) {
-.page-body {
-    margin: 0 auto;
+.page-body-content {
     height: 535px;
     background: $whiteTwo;
+    margin: 0 auto;
+    width: 1120px;
 }
+   .page-body-content {
+    margin-left: 320px;
+  }
+  .page-body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 .header-page {
     height: 0;
     border: 2px solid $whiteTwo;
@@ -292,7 +291,7 @@ li {
     display: flex;
     margin-right: 15px;
 }
-.menu-button-repair {
+  .menu-button-check {
     font-family: 'TTLakes';
     color: $blackOne;
     font-size: 16px;
@@ -301,10 +300,9 @@ li {
     font-size: 16px;
     font-weight: 500;
     border: none;
-
     background: url('../img/checkstatus.svg') no-repeat right 0px;
 }
-.menu-button-check {
+.menu-button-repair {
     font-family: 'TTLakes';
     color: $blackOne;
     font-size: 16px;
@@ -316,7 +314,15 @@ li {
     border: none;
     background: url('../img/repair.svg') no-repeat right 0px;
 }
-.services-list {
+  .menu-button-check:hover {
+    color: $pinkTwo;
+
+  }
+  .menu-button-repair:hover {
+    color: $pinkTwo;
+  }
+
+  .services-list {
     white-space: normal;
     margin-top: -20px;
     margin-bottom: 0px;
@@ -330,11 +336,6 @@ li {
 .picture {
     margin-top: 0px;
 }
-}
-@media (min-width: 1440px) {
-    .page-body {
-        margin-left: 360px;
-    }
 }
 
 

@@ -9,12 +9,6 @@ html {
     font-family: 'TTLakes', sans-serif;
     color: $grayOne;
 }
-body {
-    margin: 0;
-    background-color: $whiteThree;
-    height: 272px;
-    margin:0;
-}
 .swiper-container-prices {
     margin-top: 20px;
 }
@@ -28,7 +22,7 @@ body {
     padding: 16px;
     letter-spacing: -0.2px;
 }
-.slider-conteiner {
+.slider-container {
     position: relative;
     background-color: $whiteOne;
     height: 200px;
@@ -54,26 +48,26 @@ body {
 .swiper-slide-li-one {
   display: none;
 }
-.slider-conteiner-services {
+.slider-container-services {
     padding-top: 16px;
 }
-.slider-conteiner-prices {
+.slider-container-prices {
     margin-left: 16px;
     margin-top: 16px;
 }
-.slider-conteiner-services {
+.slider-container-services {
     margin-left: 16px;
     margin-top: 16px;
 }
-.slider-conteiner-time {
+.slider-container-time {
     margin-left: 16px;
     margin-top: 16px;
 }
-.slider-conteiner-text {
+.slider-container-text {
     margin-top: 4px;
     color: $grayOne;
 }
-.slider-conteiner-about {
+.slider-container-about {
     color: $blackOne;
     line-height: 18px;
 }
@@ -91,9 +85,10 @@ body {
     right: 16px;
     height: 32px;
     width: 119px;
+    font-family: 'TTLakes', sans-serif;
     font-size: 12px;
     font-weight: 700;
-    padding-right: 10%;
+    padding-right: 30px;
     text-transform: uppercase;
     color: $whiteOne;
     background-color: $pinkOne;
@@ -144,7 +139,7 @@ body {
         padding-left: 0;
         margin-left: 3%;
     }
-    .slider-conteiner {
+    .slider-container {
         display: flex;
     }
     .swiper-wrapper-prices {
@@ -175,51 +170,51 @@ body {
         margin-bottom: -70px;
         flex-direction: column;
      }
-    .slider-conteiner-prices {
+    .slider-container-prices {
       margin-left: 500px;
     }
-    .conteiner-li-one {
+    .container-li-one {
       display: flex;
     }
-    .slider-conteiner-text-center {
+    .slider-container-text-center {
       margin-left: -35px;
     }
-    .slider-conteiner-text-right {
+    .slider-container-text-right {
       margin-left: -45px;
     }
-    .slider-conteiner {
+    .slider-container {
         display: flex;
         height: 64px;
     }
-    .slider-conteiner {
+    .slider-container {
         width: 100%;
     }
-    .slider-conteiner-prices {
+    .slider-container-prices {
         margin-left: 0;
         margin-right: 5%;
         margin-bottom: 16px;
     }
-    .slider-conteiner-text {
+    .slider-container-text {
         white-space: nowrap;
     }
-    .slider-conteiner-about {
+    .slider-container-about {
        display: flex;
        white-space: nowrap;
     }
-    .slider-conteiner-text {
+    .slider-container-text {
         display: none;
     }
-    .slider-conteiner-services {
+    .slider-container-services {
         width: 54%;
         margin-top: 22px;
         margin-left: 0;
         padding: 0;
     }
-    .slider-conteiner-prices {
+    .slider-container-prices {
         width: 8%;
         margin-top: 22px;
     }
-    .slider-conteiner-time {
+    .slider-container-time {
        margin-right: 7%;
        margin-top: 22px;
 
