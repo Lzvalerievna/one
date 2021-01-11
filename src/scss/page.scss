@@ -37,7 +37,6 @@ body.body_active {
 .header {
     font-family: 'TTLakes', sans-serif;
     color: $blackOne;
-    overflow-x: hidden;
     align-items: center;
 }
 .header-page {
@@ -121,7 +120,6 @@ li {
     white-space: nowrap;
     padding: 10px 0px 10px 20px;
     overflow: auto;
-
 }
 .services-list__item {
     display: inline-block;
@@ -157,7 +155,7 @@ li {
     overflow: hidden;
     margin-top: 20px;
 }
-.exstension {
+.extension {
     display:inline-block;
     padding-left: 40px;
     border: none;
@@ -168,7 +166,7 @@ li {
     color: $blackOne;
     background: url('../img/sign.svg') no-repeat 15px 5px ;
 }
-.exstension:hover {
+.extension:hover {
     color: $pinkTwo;
 }
 .picture {
