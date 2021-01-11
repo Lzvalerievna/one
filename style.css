@@ -46,7 +46,6 @@ body.body_active {
 .header {
   font-family: 'TTLakes', sans-serif;
   color: #1B1C21;
-  overflow-x: hidden;
   align-items: center; }
 
 .header-page {
@@ -169,7 +168,7 @@ li {
   overflow: hidden;
   margin-top: 20px; }
 
-.exstension {
+.extension {
   display: inline-block;
   padding-left: 40px;
   border: none;
@@ -180,7 +179,7 @@ li {
   color: #1B1C21;
   background: url(./static/sign.svg) no-repeat 15px 5px; }
 
-.exstension:hover {
+.extension:hover {
   color: #cd37bc; }
 
 .picture {
