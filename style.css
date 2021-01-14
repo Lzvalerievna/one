@@ -252,7 +252,6 @@ li {
 
 @media (min-width: 1440px) {
   .page-body-content {
-    height: 535px;
     background: #F8F8F8;
     margin: 0 auto;
     width: 1120px; }
@@ -805,7 +804,8 @@ html {
 
 @media (min-width: 768px) {
   .page-footer {
-    flex-direction: row; }
+    flex-direction: row;
+    max-width: 1439px; }
   .page-footer-left {
     width: 30%;
     margin-top: 32px;
@@ -821,6 +821,12 @@ html {
     margin-top: 32px;
     margin-left: 24px;
     text-align: right; } }
+
+@media (min-width: 1440px) {
+  .page-footer {
+    flex-direction: row;
+    max-width: 1120px;
+    margin-left: 320px; } }
 
 a {
   text-decoration: none;
