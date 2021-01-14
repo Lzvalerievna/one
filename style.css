@@ -121,6 +121,7 @@ body.body_active {
 .services-title {
   font-size: 28px;
   padding-left: 20px;
+  color: #1B1C21;
   margin-top: 20px;
   background: url(./static/highlight.svg) no-repeat; }
 
