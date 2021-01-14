@@ -25,6 +25,7 @@
 @media (min-width: 768px) {
     .page-footer {
         flex-direction: row;
+        max-width: 1439px;
     }
     .page-footer-left {
         width: 30%;
@@ -44,4 +45,11 @@
         margin-left: 24px;
         text-align: right;
     }
+}
+@media (min-width: 1440px) {
+  .page-footer {
+    flex-direction: row;
+    max-width: 1120px;
+    margin-left: 320px;
+  }
 }
